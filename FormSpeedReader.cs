@@ -170,6 +170,12 @@ namespace text_to_speech_reader
         {
             if (tmrSpeed.Enabled == false)
             {
+                if (tbProgress.Value == tbProgress.Maximum)
+                {
+                    rtxtContent.SelectionStart = 0;
+                    return;
+                }
+
                 int start_position = rtxtContent.Text.Length * tbProgress.Value / 100;
                 int end_position = rtxtContent.Text.IndexOf(" ", start_position);
                 int selection_length = end_position - start_position;
@@ -182,6 +188,8 @@ namespace text_to_speech_reader
 
                 lblCurrentWord.Text = rtxtContent.Text.Substring(start_position, selection_length);
                 highlight_word(start_position, selection_length);
+
+                rtxtContent.ScrollToCaret();
             }
         }
     }
