@@ -191,7 +191,7 @@
             Controls.Add(btnReadBox);
             Controls.Add(label1);
             Name = "FormSpeedReader";
-            Text = "FormSpeedReader";
+            Text = "Speed Reader";
             Load += FormSpeedReader_Load;
             ((System.ComponentModel.ISupportInitialize)tbProgress).EndInit();
             ((System.ComponentModel.ISupportInitialize)tbFontSize).EndInit();
