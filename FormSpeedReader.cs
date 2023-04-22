@@ -84,7 +84,10 @@ namespace text_to_speech_reader
                     }
 
                     btnReadBox.Text = "Pause";
-
+                    if (rtxtContent.SelectionStart == rtxtContent.Text.Length)
+                    {
+                        rtxtContent.SelectionStart = 0;
+                    }
                     tmrSpeed.Enabled = true;
                 }
             }
