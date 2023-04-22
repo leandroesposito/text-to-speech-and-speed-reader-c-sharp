@@ -111,7 +111,7 @@
             rtxtContent.Name = "rtxtContent";
             rtxtContent.Size = new Size(631, 125);
             rtxtContent.TabIndex = 15;
-            rtxtContent.Text = "aa aa a aa  asda a a ";
+            rtxtContent.Text = "";
             // 
             // tbSpeed
             // 
